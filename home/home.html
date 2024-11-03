@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <div class="table-wrapper">
+        <table id="customers">
+            <colgroup>
+                <col style="width: 15%;">
+                <col style="width: 65%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+            </colgroup>
+            <tr>
+                <th>Mã Tìm</th>
+                <th>Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Xóa</th>
+            </tr>
+            <!-- <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Germany</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Germany</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 1</td>
+                <td>Product Name 1</td>
+                <td>100</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 2</td>
+                <td>Product Name 2</td>
+                <td>200</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 3</td>
+                <td>Product Name 3</td>
+                <td>300</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 4</td>
+                <td>Product Name 4</td>
+                <td>400</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 5</td>
+                <td>Product Name 5</td>
+                <td>500</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 6</td>
+                <td>Product Name 6</td>
+                <td>600</td>
+                <td>Xóa</td>
+            </tr>
+            <tr>
+                <td>Another Product 7</td>
+                <td>Product Name 7</td>
+                <td>700</td>
+                <td>Xóa</td>
+            </tr> -->
+        </table>
+    </div>
+    
+    <div class="crud-container">
+
+        <div class="input-container">
+            <div class="input-field">
+                <label for="ma-tim">Mã tìm</label>
+                <input type="text" id="ma-tim" placeholder="Mã tìm">
+            </div>
+            <div class="input-field">
+                <label for="ten-hien-thi">Tên hiển thị</label>
+                <input type="text" id="ten-hien-thi" placeholder="Tên hiển thị">
+            </div>
+            <div class="input-field">
+                <label for="don-gia">Đơn giá</label>
+                <input type="text" id="don-gia" placeholder="Đơn giá">
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <!-- HTML !-->
+            <button class="button-them" role="button">Thêm</button>
+            <button class="button-sua" role="button">Sửa</button>
+            <button class="button-nhapex" role="button">Nhập Excel</button>
+            <button class="button-taiex" role="button">Tải Excel</button>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>

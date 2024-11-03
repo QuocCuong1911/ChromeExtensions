@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0 20px 0px 20px;
+  text-align: left;  
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.table-wrapper {
+  max-height: 500px; /* Chiều cao tối đa cho table wrapper */
+  overflow-y: auto;  /* Thêm thanh cuộn theo chiều dọc */
+  border: 1px solid #ccc; /* Viền cho wrapper */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+#customers {
+  width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng */
+  border-collapse: collapse; /* Gộp các đường viền */
+}
+
+#customers th, #customers td {
+  border: 1px solid #ddd; /* Viền cho th và td */
+  padding: 8px; /* Khoảng cách bên trong */ 
+  font-size: 16px;
+}
+
+#customers th {
+  background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+  position: sticky; /* Giữ cố định tiêu đề khi cuộn */
+  top: 0; /* Đặt vị trí ở trên cùng của bảng */
+  z-index: 1; /* Đảm bảo tiêu đề luôn nằm trên các ô khác */
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+#ma-tim, #don-gia {
+  width: 120px;
+}
+
+#ten-hien-thi {
+  width: 350px;
+  margin: 0 10px 0 10px;
+}
+
+.input-field label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input-field input[type="text"] {
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.crud-container {
+  margin: 0 20px 0 20px;
+  position: fixed;
+  /* Giữ cố định khi cuộn */
+  bottom: 50px;
+  /* Cách đáy 10px */
+  left: 0;
+  right: 0;
+}
+
+.btn-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* khoảng cách giữa các nút */
+}
+
+.button-them,
+.button-sua,
+.button-nhapex,
+.button-taiex {
+  align-items: center;
+  background-color: #5cecfa;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  height: 35px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-them:after,
+.button-sua:after,
+.button-nhapex:after,
+.button-taiex:after {
+  background-color: #848587;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 32px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+/* Hover effect for all buttons */
+.button-them:hover:after,
+.button-sua:hover:after,
+.button-nhapex:hover:after,
+.button-taiex:hover:after {
+  transform: translate(0, 0);
+}
+
+/* Active state for all buttons */
+.button-them:active,
+.button-sua:active,
+.button-nhapex:active,
+.button-taiex:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+/* Hover outline removal for all buttons */
+.button-them:hover,
+.button-sua:hover,
+.button-nhapex:hover,
+.button-taiex:hover {
+  background-color: #61f14b;
+  color: white;
+  outline: 0;
+}
+
+/* Responsive padding for all buttons */
+@media (min-width: 768px) {
+
+  .button-them,
+  .button-sua,
+  .button-nhapex,
+  .button-taiex {
+    padding: 0 40px;
+  }
+}
